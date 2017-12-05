@@ -1,10 +1,12 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-function Home (props) {
+function Home(props) {
   return (
-    <div className="home">
-      <h3>Welcome to the homepage</h3>
+    <div>
+
     </div>
+
   )
 }
 
