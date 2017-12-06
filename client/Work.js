@@ -1,17 +1,17 @@
 import React from 'react'
 
 import SubPageNav from './SubPageNav'
-import AboutBody from './AboutBody'
+import WorkBody from './WorkBody'
 import PennyFarthing from './PennyFarthing'
 
-const About = () => {
+const Work = () => {
   return (
-    <div className="about">
-      <SubPageNav page="about" />
-      <AboutBody />
+    <div className="work">
+      <SubPageNav page="work" />
+      <WorkBody />
       <PennyFarthing />
     </div>
   )
 }
 
-export default About
+export default Work
