@@ -19,14 +19,14 @@ const WorkBody = () => {
     </div>
     <div className="row portfolio-item even">
       <div className="four columns">
-        <a className="image-link" href="http://www.gurgl.nz">
+        <a className="image-link" href="https://gurglr.herokuapp.com/">
           <img src="img/gurgl.jpg" alt="Gurgl thumbnail" />
         </a>
       </div>
       <div className="eight columns">
         <h4>Gurgl</h4>
         <p>An infants clothing exchange app created as a group project to finish up the Enspiral Dev Academy, but enduring as a darn good idea. It's real. It's happening. <br />Built using Node.js, Express, React, Redux, Webpack and Skeleton.</p>
-        <p><a href="http://www.gurgl.nz">Visit project</a></p>
+        <p><a href="https://gurglr.herokuapp.com/">Visit project</a></p>
       </div>
     </div>
     <div className="row portfolio-item odd">
