@@ -1,10 +1,17 @@
 import React from 'react'
 
-function Home (props) {
+import HomeHeader from './HomeHeader'
+import HomeTitle from './HomeTitle'
+import HomeBody from './HomeBody'
+
+function Home(props) {
   return (
-    <div className="home">
-      <h3>Welcome to the homepage</h3>
+    <div>
+      <HomeHeader />
+      <HomeTitle />
+      <HomeBody />
     </div>
+
   )
 }
 
