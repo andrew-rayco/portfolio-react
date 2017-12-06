@@ -11,7 +11,6 @@ function Home(props) {
       <HomeTitle />
       <HomeBody />
     </div>
-
   )
 }
 
