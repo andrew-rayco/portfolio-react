@@ -13,16 +13,16 @@ function HomeHeader(props) {
         <div className="twelve columns">
           <nav>
             <input type="checkbox" id="nav"/>
-            <label for="nav"></label>
+            <label htmlFor="nav"></label>
             <ul>
               <li>
-                <a className="active" href="index.html">Home</a>
+                <Link className="active" to="/">Home</Link>
               </li>
               <li>
-                <a href="about.html">About</a>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="work.html">Work</a>
+                <Link to="/work">Work</Link>
               </li>
             </ul>
           </nav>

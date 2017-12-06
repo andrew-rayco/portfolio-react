@@ -1,10 +1,15 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+
+import HomeHeader from './HomeHeader'
+import HomeTitle from './HomeTitle'
+import HomeBody from './HomeBody'
 
 function Home(props) {
   return (
     <div>
-
+      <HomeHeader />
+      <HomeTitle />
+      <HomeBody />
     </div>
 
   )
