@@ -217,9 +217,17 @@ nav ul li:hover>ul {
   margin-top: -.3em;
 }
 
+.large span {
+  font-size: .25em;
+}
+
 .about h3 {
   margin-top: 0.8em;
   margin-bottom: 0.3em;
+}
+
+.penny-farthing {
+  margin-bottom: 4em;
 }
 
 
@@ -234,8 +242,6 @@ nav ul li:hover>ul {
   border: 2px solid #eee;
   max-width: 100%;
 }
-
-
 
 .image-link {
   border-bottom: 0;
