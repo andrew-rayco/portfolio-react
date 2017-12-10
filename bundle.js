@@ -2406,8 +2406,8 @@ var SubPageNav = function SubPageNav(props) {
           'h1',
           { className: 'logo' },
           _react2.default.createElement(
-            'a',
-            { href: 'index.html' },
+            _reactRouterDom.Link,
+            { to: '/' },
             'Andrew & Co.'
           )
         )
