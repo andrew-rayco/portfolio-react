@@ -7,14 +7,53 @@ const WorkBody = () => {
       <h1>Things I've made</h1>
     <div className="row portfolio-item odd">
       <div className="four columns">
+        <a className="image-link" href="http://f1ian.herokuapp.com">
+          <img src="img/morgenstund.jpg" alt="F1ian thumbnail" />
+        </a>
+      </div>
+      <div className="eight columns">
+        <h4>F1ian</h4>
+        <p>A personal project based on my passion for Formula 1.<br />A quick reference for details and results of every race in F1 history, and every circuit ever used. Including race visualisations of more recent events.<br />
+        Built with React, PostGreSQL, Express and webpack.<br />Hosted on a Heroku hobby-dev account, so it can be slow to spin up first time.</p>
+        <p><a href="http://f1ian.herokuapp.com">Visit project</a></p>
+      </div>
+    </div>
+    <div className="row portfolio-item odd">
+      <div className="four columns">
+        <a className="image-link" href="https://my-metlink.herokuapp.com/#/">
+          <img src="img/morgenstund.jpg" alt="My Metlink thumbnail" />
+        </a>
+      </div>
+      <div className="eight columns">
+        <h4>My Metlink</h4>
+        <p>Like most people, I only ever catch the bus from two places.<br />This app consumes Metlink's unofficial API to quickly tell me when the next bus is expected, whether I'm going to town or going home.<br />
+        Lovingly crafted with React, Express, Sass and webpack.<br />Hosted on a Heroku hobby-dev account, so it can be slow to spin up first time.</p>
+        <p><a href="https://my-metlink.herokuapp.com/#/">Visit project</a></p>
+      </div>
+    </div>
+    <div className="row portfolio-item odd">
+      <div className="four columns">
         <a className="image-link" href="http://morgenstund.andycondon.com">
           <img src="img/morgenstund.jpg" alt="Morgenstund thumbnail" />
         </a>
       </div>
       <div className="eight columns">
         <h4>Morgenstund</h4>
-        <p>A surprise gift for an amateur beekeeping friend in Germany (Der Bienenherr).<br />Fully responsive HTML and CSS with the help of media queries and the Skeleton CSS framework. This was a fun project, done in the knowledge that there'd be laughs at the end.</p>
+        <p>A surprise gift for an amateur beekeeping friend in Germany (Der Bienenherr).<br />Fully responsive HTML and CSS with the help of media queries and the Skeleton CSS framework. This was a fun project, and I'm pretty thrilled with the end result.</p>
         <p><a href="http://morgenstund.andycondon.com">Visit project</a></p>
+      </div>
+    </div>
+    <div className="row portfolio-item odd">
+      <div className="four columns">
+        <a className="image-link" href="http://wairua.andycondon.com">
+          <img src="img/morgenstund.jpg" alt="Wairua thumbnail" />
+        </a>
+      </div>
+      <div className="eight columns">
+        <h4>Wairua Adventures</h4>
+        <p>A create-react-app project for an emerging wellness adventure group.<br />Currently a draft awaiting content, this site is fully responsive, with a whopping great form for online registrations.<br />
+        This app magically formed with React, Sass, webpack and is hosted on a Digital Ocean droplet.</p>
+        <p><a href="http://wairua.andycondon.com">Visit project</a></p>
       </div>
     </div>
     <div className="row portfolio-item even">
@@ -25,7 +64,7 @@ const WorkBody = () => {
       </div>
       <div className="eight columns">
         <h4>Gurgl</h4>
-        <p>An infants clothing exchange app created as a group project to finish up the Enspiral Dev Academy, but enduring as a darn good idea. It's real. It's happening. <br />Built using Node.js, Express, React, Redux, Webpack and Skeleton.</p>
+        <p>An infants clothing exchange app created as a group project to finish up the Enspiral Dev Academy, but enduring as a darn good idea. It's real. It's happening. <br />Built using Node.js, Express, React, Redux, Webpack and Skeleton.<br />Hosted on a Heroku hobby-dev account, so it can be slow to spin up first time.</p>
         <p><a href="https://gurglr.herokuapp.com/">Visit project</a></p>
       </div>
     </div>
