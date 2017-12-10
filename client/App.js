@@ -12,7 +12,6 @@ import About from './About'
 import Work from './Work'
 import Footer from './Footer'
 
-
 function App (props) {
   return (
     <Router>
