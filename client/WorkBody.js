@@ -8,7 +8,7 @@ const WorkBody = () => {
     <div className="row portfolio-item odd">
       <div className="four columns">
         <a className="image-link" href="http://f1ian.herokuapp.com">
-          <img src="img/morgenstund.jpg" alt="F1ian thumbnail" />
+          <img src="img/f1ian.png" alt="F1ian thumbnail" />
         </a>
       </div>
       <div className="eight columns">
@@ -20,15 +20,15 @@ const WorkBody = () => {
     </div>
     <div className="row portfolio-item odd">
       <div className="four columns">
-        <a className="image-link" href="https://my-metlink.herokuapp.com/#/">
-          <img src="img/morgenstund.jpg" alt="My Metlink thumbnail" />
+        <a className="image-link" href="https://my-metlink.herokuapp.com/">
+          <img src="img/my-metlink.png" alt="My Metlink thumbnail" />
         </a>
       </div>
       <div className="eight columns">
         <h4>My Metlink</h4>
         <p>Like most people, I only ever catch the bus from two places.<br />This app consumes Metlink's unofficial API to quickly tell me when the next bus is expected, whether I'm going to town or going home.<br />
         Lovingly crafted with React, Express, Sass and webpack.<br />Hosted on a Heroku hobby-dev account, so it can be slow to spin up first time.</p>
-        <p><a href="https://my-metlink.herokuapp.com/#/">Visit project</a></p>
+        <p><a href="https://my-metlink.herokuapp.com/">Visit project</a></p>
       </div>
     </div>
     <div className="row portfolio-item odd">
@@ -46,7 +46,7 @@ const WorkBody = () => {
     <div className="row portfolio-item odd">
       <div className="four columns">
         <a className="image-link" href="http://wairua.andycondon.com">
-          <img src="img/morgenstund.jpg" alt="Wairua thumbnail" />
+          <img src="img/wairua.png" alt="Wairua thumbnail" />
         </a>
       </div>
       <div className="eight columns">
@@ -68,6 +68,18 @@ const WorkBody = () => {
         <p><a href="https://gurglr.herokuapp.com/">Visit project</a></p>
       </div>
     </div>
+    <div className="row portfolio-item even">
+      <div className="four columns">
+        <a className="image-link" href="http://shopping.andycondon.com/">
+          <img src="img/shopping.png" alt="Shopping thumbnail" />
+        </a>
+      </div>
+      <div className="eight columns">
+        <h4>Shopping List</h4>
+        <p>A simple personalised place to keep track of what we need.<br />With bonus random insults to entertain the user on load. This was my first real app and we still use it every day.<br />Takes advantage of a NoSQL realtime database from Google Firebase.</p>
+        <p><a href="http://shopping.andycondon.com/">Visit project</a></p>
+      </div>
+    </div>
     <div className="row portfolio-item odd">
       <div className="four columns">
         <a className="image-link" href="http://smokepack.andycondon.com">
@@ -76,7 +88,7 @@ const WorkBody = () => {
       </div>
       <div className="eight columns">
         <h4>Smokepack</h4>
-        <p>A personal hobby project. I've been inspired by antique cigarette pack designs ever since I saw the brilliant <a href="https://www.youtube.com/watch?v=QaFKoucByNE">intro to the movie <em>Thank You for Smoking</em></a>. <br />These are my digital, fully responsive tributes with the much healthier HTML and CSS inside.</p>
+        <p>A personal CSS hobby project. I've been inspired by antique cigarette pack designs ever since I saw the brilliant <a href="https://www.youtube.com/watch?v=QaFKoucByNE">intro to the movie <em>Thank You for Smoking</em></a>. <br />These are my digital, fully responsive tributes with the much healthier HTML and CSS inside.</p>
         <p><a href="http://smokepack.andycondon.com">Visit project</a></p>
       </div>
     </div>
