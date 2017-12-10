@@ -6,7 +6,7 @@ const SubPageNav = (props) => {
     <div className="container blog">
       <div className="row">
         <div className="twelve columns">
-          <h1 className="logo"><a href="index.html">Andrew &amp; Co.</a></h1></div>
+          <h1 className="logo"><Link to="/">Andrew &amp; Co.</Link></h1></div>
         </div>
         <div className="row nav">
           <div className="twelve columns">
