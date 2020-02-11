@@ -1,17 +1,18 @@
-import React from 'react'
+import React from "react"
 
-import SubPageNav from './SubPageNav'
-import WorkBody from './WorkBody'
-import PennyFarthing from './PennyFarthing'
+import SubPageNav from "./SubPageNav"
+import WorkBody from "./WorkBody"
+import WorkList from "./WorkList"
+import PennyFarthing from "./PennyFarthing"
 
 const Work = () => {
-  return (
-    <div className="work">
-      <SubPageNav page="work" />
-      <WorkBody />
-      <PennyFarthing />
-    </div>
-  )
+    return (
+        <div className="work">
+            <SubPageNav page="work" />
+            <WorkList />
+            <PennyFarthing />
+        </div>
+    )
 }
 
 export default Work
