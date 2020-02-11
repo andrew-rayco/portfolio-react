@@ -7,8 +7,8 @@ const WorkList = () => {
     return (
         <div className="container blog">
             <h1>Things I've made</h1>
-            {items.map(item => (
-                <PortfolioItem data={item} />
+            {items.map((item, i) => (
+                <PortfolioItem data={item} key={i} />
             ))}
         </div>
     )

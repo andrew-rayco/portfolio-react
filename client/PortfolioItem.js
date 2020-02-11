@@ -1,4 +1,5 @@
 import React from "react"
+import ReactHtmlParser from "react-html-parser"
 
 const PortfolioItem = props => {
     const { title, desc, url } = props.data
@@ -13,7 +14,7 @@ const PortfolioItem = props => {
             </div>
             <div className="eight columns">
                 <h4>{title}</h4>
-                <p>{desc}</p>
+                <p>{ReactHtmlParser(desc)}</p>
                 <p>
                     <a href={url}>Visit project</a>
                 </p>
