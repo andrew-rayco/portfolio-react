@@ -12,7 +12,7 @@ const items = [
     {
         title: "Kreativkitchen",
         desc:
-            "A user interface prototype for proposed new graphic design site. <br />Designed by Kreativkitchen and crafted into a fully responsive mockup. <br />First project dabbling with (and immensely enjoying) Gulp.",
+            "A user interface prototype for proposed new graphic design site. <br />Designed by Kreativkitchen and crafted into a fully responsive mockup. I think it looks and feels really neat. <br />First project dabbling with (and immensely enjoying) Gulp.",
         url: "http://kk.andycondon.com",
         img: {
             filename: "kk.png",

@@ -1,7 +1,6 @@
 import React from "react"
 
 import SubPageNav from "./SubPageNav"
-import WorkBody from "./WorkBody"
 import WorkList from "./WorkList"
 import PennyFarthing from "./PennyFarthing"
 
