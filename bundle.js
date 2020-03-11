@@ -1376,7 +1376,7 @@ function defineProp(name, value) {
 module.exports = {
     Parser: Parser,
     Tokenizer: __webpack_require__(28),
-    ElementType: __webpack_require__(9),
+    ElementType: __webpack_require__(8),
     DomHandler: DomHandler,
     get FeedHandler() {
         return defineProp("FeedHandler", __webpack_require__(99));
@@ -1537,6 +1537,27 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports) {
+
+//Types of elements found in the DOM
+module.exports = {
+	Text: "text", //Text
+	Directive: "directive", //<? ... ?>
+	Comment: "comment", //<!-- ... -->
+	Script: "script", //<script> tags
+	Style: "style", //<style> tags
+	Tag: "tag", //Any tag
+	CDATA: "cdata", //<![CDATA[ ... ]]>
+	Doctype: "doctype",
+
+	isTag: function(elem){
+		return elem.type === "tag" || elem.type === "script" || elem.type === "style";
+	}
+};
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1596,27 +1617,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-//Types of elements found in the DOM
-module.exports = {
-	Text: "text", //Text
-	Directive: "directive", //<? ... ?>
-	Comment: "comment", //<!-- ... -->
-	Script: "script", //<script> tags
-	Style: "style", //<style> tags
-	Tag: "tag", //Any tag
-	CDATA: "cdata", //<![CDATA[ ... ]]>
-	Doctype: "doctype",
-
-	isTag: function(elem){
-		return elem.type === "tag" || elem.type === "script" || elem.type === "style";
-	}
-};
 
 
 /***/ }),
@@ -2844,7 +2844,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(8);
+var _reactRouterDom = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4344,7 +4344,7 @@ Tokenizer.prototype._emitPartial = function(value) {
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ElementType = __webpack_require__(9);
+var ElementType = __webpack_require__(8);
 
 var re_whitespace = /\s+/g;
 var NodePrototype = __webpack_require__(30);
@@ -6688,7 +6688,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(8);
+var _reactRouterDom = __webpack_require__(9);
 
 var _reactDom = __webpack_require__(71);
 
@@ -40774,7 +40774,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(8);
+var _reactRouterDom = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40870,7 +40870,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(8);
+var _reactRouterDom = __webpack_require__(9);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41155,131 +41155,131 @@ exports.default = About;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(8);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var AboutBody = function AboutBody() {
-  return _react2.default.createElement(
-    'div',
-    { className: 'container blog' },
-    _react2.default.createElement(
-      'h1',
-      null,
-      'The basics'
-    ),
-    _react2.default.createElement(
-      'div',
-      { className: 'row about' },
-      _react2.default.createElement(
-        'div',
-        { className: 'six columns' },
+    return _react2.default.createElement(
+        "div",
+        { className: "container blog" },
         _react2.default.createElement(
-          'p',
-          null,
-          'I was a Web Project/Account Manager at ',
-          _react2.default.createElement(
-            'a',
-            { href: 'http://springload.co.nz' },
-            'Springload'
-          ),
-          ' for over five years until 2012, and have built WordPress sites for small businesses ever since. I\'ve just graduated from Enspiral Dev Academy, a commitment I made to update and refine my skills.'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          'I smile at passing strangers on a quiet street, and strongly believe in thank you waves when behind the wheel. I enjoy reading, gaming, guitaring, redditing and coding. I\'m also pretty big into Formula 1, so I have that going for me which is nice.'
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'row' },
-          _react2.default.createElement(
-            'div',
-            { className: 'six columns contact' },
-            _react2.default.createElement(
-              'h3',
-              null,
-              'Mail'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: 'mailto:andy@andycondon.com' },
-                'andy@',
-                _react2.default.createElement('wbr', null),
-                'andycondon.com'
-              )
-            ),
-            _react2.default.createElement(
-              'h3',
-              null,
-              'Twitter'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: 'https://twitter.com/too_much_andrew' },
-                '@Too_Much_Andrew'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'six columns contact' },
-            _react2.default.createElement(
-              'h3',
-              null,
-              'Github'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              _react2.default.createElement(
-                'a',
-                { href: 'https://github.com/andrew-rayco' },
-                'andrew-rayco'
-              )
-            ),
-            _react2.default.createElement(
-              'h3',
-              null,
-              'Available for'
-            ),
-            _react2.default.createElement(
-              'p',
-              null,
-              'Hire and Freelance'
-            )
-          )
-        )
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'six columns' },
-        _react2.default.createElement(
-          'p',
-          { className: 'large' },
-          'HTML5, CSS3, JavaScript, React, Redux, Node.js, Git, Express, Knex, SQL, APIs, Webpack, Sass, Flexbox, WordPress, Copywriting, Client-friendly ',
-          _react2.default.createElement(
-            'span',
+            "h1",
             null,
-            'and other stuff too. I won\'t be pidgeon-holed.'
-          )
+            "The basics"
+        ),
+        _react2.default.createElement(
+            "div",
+            { className: "row about" },
+            _react2.default.createElement(
+                "div",
+                { className: "six columns" },
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "I was a Web Project/Account Manager at",
+                    ' ',
+                    _react2.default.createElement(
+                        "a",
+                        { href: "http://springload.co.nz" },
+                        "Springload"
+                    ),
+                    " for over five years until 2012, and have built WordPress sites for small businesses ever since. In 2017 I made a personal commitment to update and refine my skills, and subsequently became an Enspiral Dev Academy graduate."
+                ),
+                _react2.default.createElement(
+                    "p",
+                    null,
+                    "I smile at passing strangers on a quiet street, and strongly believe in thank you waves when behind the wheel. I enjoy reading, gaming, guitaring, redditing and coding. I'm also pretty big into Formula 1, so I have that going for me which is nice."
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "row" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "six columns contact" },
+                        _react2.default.createElement(
+                            "h3",
+                            null,
+                            "Mail"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            _react2.default.createElement(
+                                "a",
+                                { href: "mailto:andy@andycondon.com" },
+                                "andy@",
+                                _react2.default.createElement("wbr", null),
+                                "andycondon.com"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "h3",
+                            null,
+                            "Twitter"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            _react2.default.createElement(
+                                "a",
+                                { href: "https://twitter.com/too_much_andrew" },
+                                "@Too_Much_Andrew"
+                            )
+                        )
+                    ),
+                    _react2.default.createElement(
+                        "div",
+                        { className: "six columns contact" },
+                        _react2.default.createElement(
+                            "h3",
+                            null,
+                            "Github"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            _react2.default.createElement(
+                                "a",
+                                { href: "https://github.com/andrew-rayco" },
+                                "andrew-rayco"
+                            )
+                        ),
+                        _react2.default.createElement(
+                            "h3",
+                            null,
+                            "Available for"
+                        ),
+                        _react2.default.createElement(
+                            "p",
+                            null,
+                            "Hire and Freelance"
+                        )
+                    )
+                )
+            ),
+            _react2.default.createElement(
+                "div",
+                { className: "six columns" },
+                _react2.default.createElement(
+                    "p",
+                    { className: "large" },
+                    "HTML5, CSS3, JavaScript, React, Redux, Node.js, Git, Express, Knex, SQL, APIs, Webpack, Sass, Flexbox, WordPress, Copywriting, Client-friendly",
+                    ' ',
+                    _react2.default.createElement(
+                        "span",
+                        null,
+                        "and other stuff too. I won't be pidgeon-holed."
+                    )
+                )
+            )
         )
-      )
-    )
-  );
+    );
 };
 
 exports.default = AboutBody;
@@ -42206,7 +42206,7 @@ module.exports = FeedHandler;
 /* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ElementType = __webpack_require__(9),
+var ElementType = __webpack_require__(8),
     getOuterHTML = __webpack_require__(101),
     isTag = ElementType.isTag;
 
@@ -42656,7 +42656,7 @@ exports.prepend = function(elem, prev){
 /* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isTag = __webpack_require__(9).isTag;
+var isTag = __webpack_require__(8).isTag;
 
 module.exports = {
 	filter: filter,
@@ -42757,7 +42757,7 @@ function findAll(test, rootElems){
 /* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var ElementType = __webpack_require__(9);
+var ElementType = __webpack_require__(8);
 var isTag = exports.isTag = ElementType.isTag;
 
 exports.testElement = function(options, element){
@@ -44350,76 +44350,76 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 var items = [{
-    title: "F1ian",
-    desc: "A personal project based on my passion for Formula 1. <br />A quick reference for details and results of every race in F1 history, and every circuit ever used. Including race visualisations of more recent events. <br />Built with React, PostGreSQL, Express and webpack. <br />Hosted on a Heroku hobby-dev account, so it can be slow to spin up first time.",
-    url: "http://f1ian.herokuapp.com",
+    title: 'F1ian',
+    desc: 'A personal project based on my passion for Formula 1. <br />A quick reference for details and results of every race in F1 history, and every circuit ever used. Including race visualisations of more recent events. <br />Built with React, PostGreSQL, Express and webpack. <br />Hosted on a Heroku hobby-dev account, so it can be slow to spin up first time.',
+    url: 'http://f1ian.herokuapp.com',
     img: {
-        filename: "f1ian.png",
-        alt: "F1ian screenshot"
+        filename: 'f1ian.png',
+        alt: 'F1ian screenshot'
     }
 }, {
-    title: "Kreativkitchen",
-    desc: "A user interface prototype for proposed new graphic design site. <br />Designed by Kreativkitchen and crafted into a fully responsive mockup. I think it looks and feels really neat. <br />First project dabbling with (and immensely enjoying) Gulp.",
-    url: "http://kk.andycondon.com",
+    title: 'Kreativkitchen',
+    desc: 'A user interface prototype for proposed new graphic design site. <br />Designed by Kreativkitchen and crafted into a fully responsive mockup. I think it looks and feels really neat. <br />First project dabbling with (and immensely enjoying) Gulp.',
+    url: 'http://kk.andycondon.com',
     img: {
-        filename: "kk.png",
-        alt: "Kreativkitchen screenshot"
+        filename: 'kk.png',
+        alt: 'Kreativkitchen screenshot'
     }
 }, {
-    title: "My Metlink",
+    title: 'My Metlink',
     desc: "Like most people, I only ever catch the bus from two places.<br />This app consumes Metlink's unofficial API to quickly tell me when the next bus is expected, whether I'm going to town or going home.<br />Lovingly crafted with React, Express, Sass and webpack.<br />Hosted on a Heroku hobby-dev account, so it can be slow to spin up first time.",
-    url: "https://my-metlink.herokuapp.com/",
+    url: 'http://metlink.andycondon.com/',
     img: {
-        filename: "my-metlink.png",
-        alt: "My Metlink screenshot"
+        filename: 'my-metlink.png',
+        alt: 'My Metlink screenshot'
     }
 }, {
-    title: "Morgenstund",
+    title: 'Morgenstund',
     desc: "A surprise gift for an amateur beekeeping friend in Germany (Der Bienenherr).<br />Fully responsive HTML and CSS with the help of media queries and the Skeleton CSS framework. This was a fun project, and I'm pretty thrilled with the end result.",
-    url: "http://morgenstund.andycondon.com",
+    url: 'http://morgenstund.andycondon.com',
     img: {
-        filename: "morgenstund.jpg",
-        alt: "Morgenstund screenshot"
+        filename: 'morgenstund.jpg',
+        alt: 'Morgenstund screenshot'
     }
 }, {
-    title: "Wairua Adventures",
-    desc: "A create-react-app project for an emerging wellness adventure group.<br />Currently a draft awaiting content, this site is fully responsive, with a whopping great form for online registrations.<br />This app magically formed with React, Sass, webpack and is hosted on a Digital Ocean droplet.",
-    url: "http://wairua.andycondon.com",
+    title: 'Wairua Adventures',
+    desc: 'A create-react-app project for an emerging wellness adventure group.<br />Currently a draft awaiting content, this site is fully responsive, with a whopping great form for online registrations.<br />This app magically formed with React, Sass, webpack and is hosted on a Digital Ocean droplet.',
+    url: 'http://wairua.andycondon.com',
     img: {
-        filename: "wairua.png",
-        alt: "Wairua screenshot"
+        filename: 'wairua.png',
+        alt: 'Wairua screenshot'
     }
 }, {
-    title: "Gurgl",
+    title: 'Gurgl',
     desc: "An infants clothing exchange app created as a group project to finish up the Enspiral Dev Academy, but enduring as a darn good idea. It's real. It's happening. <br />Built using Node.js, Express, React, Redux, Webpack and Skeleton.<br />Hosted on a Heroku hobby-dev account, so it can be slow to spin up first time.",
-    url: "https://gurglr.herokuapp.com",
+    url: 'https://gurglr.herokuapp.com',
     img: {
-        filename: "gurgl.jpg",
-        alt: "Gurgl screenshot"
+        filename: 'gurgl.jpg',
+        alt: 'Gurgl screenshot'
     }
 }, {
-    title: "Shopping List",
-    desc: "A simple personalised place to keep track of what we need.<br />With bonus random insults to entertain the user on load. This was my first real app and we still use it every day.<br />Takes advantage of a NoSQL realtime database from Google Firebase.",
-    url: "http://shopping.andycondon.com/",
+    title: 'Shopping List',
+    desc: 'A simple personalised place to keep track of what we need.<br />With bonus random insults to entertain the user on load. This was my first real app and we still use it every day.<br />Takes advantage of a NoSQL realtime database from Google Firebase.',
+    url: 'http://shopping.andycondon.com/',
     img: {
-        filename: "shopping.png",
-        alt: "Shopping List screenshot"
+        filename: 'shopping.png',
+        alt: 'Shopping List screenshot'
     }
 }, {
-    title: "Smokepack",
+    title: 'Smokepack',
     desc: 'A personal CSS hobby project. I\'ve been inspired by antique cigarette pack designs ever since I saw the brilliant <a href="https://www.youtube.com/watch?v=QaFKoucByNE">intro to the movie <em>Thank You for Smoking</em></a>. <br />These are my digital, fully responsive tributes with the much healthier HTML and CSS inside.',
-    url: "http://smokepack.andycondon.com",
+    url: 'http://smokepack.andycondon.com',
     img: {
-        filename: "smokepack3.jpg",
-        alt: "Smokepack screenshot"
+        filename: 'smokepack3.jpg',
+        alt: 'Smokepack screenshot'
     }
 }, {
-    title: "Bridget McDonnell Gallery",
-    desc: "A minimalist site for a gallery in Melbourne. I was tasked with building a responsive front end for a long overdue update. Lovingly crafted with trusty old HTML, CSS, jQuery, jQueryUI and the  Skeleton CSS framework.",
-    url: "http://bridget.andycondon.com",
+    title: 'Bridget McDonnell Gallery',
+    desc: 'A minimalist site for a gallery in Melbourne. I was tasked with building a responsive front end for a long overdue update. Lovingly crafted with trusty old HTML, CSS, jQuery, jQueryUI and the  Skeleton CSS framework.',
+    url: 'http://bridget.andycondon.com',
     img: {
-        filename: "bridget.jpg",
-        alt: "Bridget McDonnel Gallery screenshot"
+        filename: 'bridget.jpg',
+        alt: 'Bridget McDonnel Gallery screenshot'
     }
 }];
 
